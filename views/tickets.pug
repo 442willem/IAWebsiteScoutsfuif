@@ -1,0 +1,54 @@
+extends layout
+
+block content
+ h1 Er zijn al !{data.gebruiker_count} groepen ingeschreven!
+ if errors
+  ul
+   for error in errors
+    li#Error!=error.msg
+
+ form(action='' method='post')
+  br
+  div
+   label
+    | Voornaam:
+   input#name.form-control(type='text', name='voornaam' value=(undefined===voornaam ? '' : voornaam))
+  div
+   label
+    | Achternaam:
+   input#name.form-control(type='text',  name='achternaam' value=(undefined===achternaam ? '' : achternaam))
+  div
+   label
+    |Geboorte datum:
+   input#name.form-control(type='date', name='geboortedatum' value=(undefined===geboortedatum ? '' : geboortedatum))
+  div
+   label
+    |email:
+   input#name.form-control(type='email', name='email' value=(undefined===email ? '' : email))
+  div
+   label
+    |Aantal VVK tickets:
+   input#name.form-control(type='number', name='VVK' value=(undefined===VVK ? '' : VVK))
+  div
+   label
+    |Aantal ADK tickets:
+   input#name.form-control(type='number', name='ADK' value=(undefined===ADK ? '' : ADK))
+  div
+   label
+    |Stad:
+    input#name.form-control(type='text', name='stad' value=(undefined===stad ? '' : stad))
+  div
+   label
+    |Postcode:
+    input#name.form-control(type='number', name='postcode' value=(undefined===postcode ? '' : postcode))
+  div
+   label
+    |straat:
+    input#name.form-control(type='text', name='straat' value=(undefined===straat ? '' : straat))
+  div
+   label
+    | Huisnummer:
+    input#name.form-control(type='number', name='huisnummer' value=(undefined===huisnummer ? '' : huisnummer))
+   br
+  div
+  button.btn.btn-primary(type='submit') Submit

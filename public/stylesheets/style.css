@@ -1,0 +1,156 @@
+body {
+  background-color: #7284a8;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #f7f0f5;
+  background-color: #dee0e3;
+}
+
+
+html,body {
+  background-color: #dee0e3;
+  background-size: contain;
+  background-position: center;
+  background-repeat: not-repeat;
+  heigth:100%;
+  width:100%;
+}
+
+.content ul{
+  list-style-type:none;
+  color:Tomato;
+  padding:1em;
+}
+
+.content img{
+ padding:10px;
+}
+
+.content form{
+ background-color: #dee0e3;
+ margin: 0 auto;
+ width: 70%;
+ border: 1px solid #CCC;
+ border-radius:1em;
+}
+
+.content h1{
+ padding:10px;
+}
+
+.content form{
+ padding:10px;
+ margin-bottom:20px;
+}
+
+.content form div+div{
+ margin-top: 1em;
+}
+
+.content label{
+ display: inline-block;
+ width: 150px;
+ text-align: center;
+ padding-right:1em;
+}
+
+.content input{
+ font: 1em sans-serif;
+ width:100%;
+ box-sizing: border-box;
+ border: 1px solid #999;
+}
+
+.content input:focus{
+ border-color: #000;
+}
+
+.header h1 {
+  position: center;
+  text-align:center;
+  background-color: #040403;
+  color: #f7f0f5;
+  margin:0px;
+  border-bottom:2px solid #040403;
+}
+
+.topnav {
+  background-color: #3d4147;
+  padding:0;
+  margin:0;
+  overflow: hidden;
+  border-bottom:2px solid #040403;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f7f0f5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.content{
+    text-align: center;
+    background-color: #f7f0f5;
+    border-bottom:2px solid #040403;
+}
+
+.content p{
+  background-color: #f7f0f5;
+  text-align:center;
+  color: #474954;
+}
+.content h2 {
+  position: center;
+  background-color: #f7f0f5;
+  color: #474954;
+  margin:0;
+ 
+}
+
+#slider {
+    margin:2%;
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    max-width: 720px;
+    height: 400px;
+}
+
+
+footer{
+ background-color: #3d4147;
+ position: relative;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+}
+
+footer p{
+ text-align: center;
+ color:	#f7f0f5;
+}
+
+.topnav a.active {
+  background-color: #7284a8;
+  color: white;
+}
