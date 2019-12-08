@@ -1,7 +1,7 @@
 extends layout
 
 block content
- h1 Er zijn al !{data.gebruiker_count} groepen ingeschreven!
+ h2 Er zijn al !{data.gebruiker_count} groepen ingeschreven!
  if errors
   ul
    for error in errors
@@ -19,31 +19,31 @@ block content
    input#name.form-control(type='text',  name='achternaam' value=(undefined===achternaam ? '' : achternaam))
   div
    label
-    |Geboorte datum:
+    | Geboorte datum:
    input#name.form-control(type='date', name='geboortedatum' value=(undefined===geboortedatum ? '' : geboortedatum))
   div
    label
-    |email:
+    | E-mailadres:
    input#name.form-control(type='email', name='email' value=(undefined===email ? '' : email))
   div
    label
-    |Aantal VVK tickets:
+    | Aantal VVK tickets:
    input#name.form-control(type='number', name='VVK' value=(undefined===VVK ? '' : VVK))
   div
    label
-    |Aantal ADK tickets:
+    | Aantal ADK tickets:
    input#name.form-control(type='number', name='ADK' value=(undefined===ADK ? '' : ADK))
   div
    label
-    |Stad:
+    | Stad:
     input#name.form-control(type='text', name='stad' value=(undefined===stad ? '' : stad))
   div
    label
-    |Postcode:
+    | Postcode:
     input#name.form-control(type='number', name='postcode' value=(undefined===postcode ? '' : postcode))
   div
    label
-    |straat:
+    | Straat:
     input#name.form-control(type='text', name='straat' value=(undefined===straat ? '' : straat))
   div
    label
