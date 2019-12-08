@@ -1,17 +1,16 @@
 'use strict';
 
 $(document).ready(function() {
-    //settings for slider
-    var width = 720;
-    var animationSpeed = 1000;
-    var pause = 3000;
-    var currentSlide = 1;
-
     //cache DOM elements
     var $slider = $('#slider');
     var $slideContainer = $('.slides', $slider);
     var $slides = $('.slide', $slider);
 
+    //settings for slider
+    var width = 720;
+    var animationSpeed = 1000;
+    var pause = 3000;
+    var currentSlide = 1;
     var interval;
 
     function startSlider() {
