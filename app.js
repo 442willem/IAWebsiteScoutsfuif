@@ -14,7 +14,9 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://semorshadow:AQWpm741963papeg@cluster0-mccno.azure.mongodb.net/scoutsfuif?retryWrites=true&w=majority';
+// Set up mongoose connection
+var dev_db_url = 'mongodb+srv://semorshadow:AQWpm741963papeg@cluster0-mccno.azure.mongodb.net/scoutsfuif?retryWrites=true&w=majority'
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology:true },function(err){if(err){return console.error('failed');}});
 
 
