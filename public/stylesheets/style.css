@@ -135,6 +135,7 @@ html {
     float: left;
     list-style-type: none;
     max-width: 720px;
+    overflow:hidden;
     height: 400px;
 }
 
